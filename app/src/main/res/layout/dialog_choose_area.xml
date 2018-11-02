@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/cd_layout_"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#16a61e"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:text="选择产地"
+
+            />
+
+        <ImageButton
+            android:id="@+id/addCd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="#00000000"
+            android:src="@drawable/icon_xz02"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+          <cn.com.bigknow.trade.pos.Immediate.base.widget.SimpleSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:background="@color/c_white"
+        android:layout_height="wrap_content"
+        android:id="@+id/refreshLayout"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/cd_layout_quxiao"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="#E7E7E7"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#333333"
+                android:textSize="18dp"
+                android:text="取消"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cd_layout_sure"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#16a61e"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:text="确定"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

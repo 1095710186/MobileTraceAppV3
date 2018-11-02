@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/activity_customer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/car_pay_edittext_unenable_bg"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="3dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+            <EditText
+                android:id="@+id/food_chose_ET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginRight="54dp"
+                android:hint="请输入菜名进行查询"
+                android:paddingLeft="5dp"
+                android:background="#00000000"
+                android:textColor="@color/c_333333"
+                android:textSize="18sp"/>
+            <ImageView
+                android:id="@+id/area_searchCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@drawable/icon_my_cancel"/>
+            <ImageView
+                android:id="@+id/area_searchYuyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_microphone_1"/>
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/food_search"
+            android:layout_width="77dp"
+            android:layout_height="48dp"
+            android:background="@color/common_green"
+            android:text="搜索"
+            android:textColor="@color/c_white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_foodtype"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/foodtype_RV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_bg_gray_ededed"/>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/foodtype_RV2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/white"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/foodtype_detail_RV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:background="@color/white"/>
+        </RelativeLayout>
+
+
+        </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/foodtype_searCh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"/>
+
+</LinearLayout>

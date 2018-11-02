@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/headIV"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_img"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="#000000"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                app:minTextSize="10sp"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/zlView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg13"
+                    android:gravity="center_vertical|right">
+
+                    <cn.com.bigknow.trade.pos.Immediate.app.widget.MoneyView
+                        android:id="@+id/zlTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        app:cent_size="18sp"
+                        app:money_color="#333333"
+                        app:money_text=""
+                        app:yuan_size="20sp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:text="斤"
+                    android:textColor="#888888"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/priceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg13"
+                    android:gravity="center_vertical|right">
+
+                    <cn.com.bigknow.trade.pos.Immediate.app.widget.MoneyView
+                        android:id="@+id/priceTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        app:cent_size="18sp"
+                        app:money_color="#333333"
+                        app:money_text=""
+                        app:yuan_size="20sp"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_weight="0"
+                    android:text="元/斤"
+                    android:textColor="#888888"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#dbdbdb">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="小计(元)"
+                android:textColor="#16a61e"
+                android:textSize="20sp"/>
+
+            <cn.com.bigknow.trade.pos.Immediate.app.widget.MoneyView
+                android:id="@+id/xjTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                app:cent_size="18sp"
+                app:money_color="#16a61e"
+                app:money_text=""
+                app:yuan_size="20sp"/>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/btDelete"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#8eefb1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_mc_del"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

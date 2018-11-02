@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ededed"
+              android:orientation="vertical"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#cccccc"/>
+    <LinearLayout
+
+        android:paddingLeft="8dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="@color/c_white"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/w_kc_item_imvHead"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/img_my_zwt140x"/>
+        <RelativeLayout
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/w_kc_item_tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="白菜"
+
+                android:textColor="#333333"/>
+            <TextView
+               android:layout_alignParentBottom="true"
+                android:id="@+id/w_kc_item_tvNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="180."
+                android:textColor="#333333"/>
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/w_kc_item_tvNum"
+                android:id="@+id/w_kc_item_tvNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingBottom="1dp"
+                android:text=""
+                android:textColor="#333333"/>
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="2.5dp"
+                android:layout_toRightOf="@+id/w_kc_item_tvNum1"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/w_kc_item_tvDw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="斤"
+                android:textColor="#999999"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/w_kc_item_imvDel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:background="#8fefb0"
+            android:src="@drawable/icon_mc_del"/>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"/>
+
+
+</LinearLayout>

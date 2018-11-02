@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_tag_rbbg"
+    android:id="@+id/tag_item_name"
+    android:minHeight="36dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:minWidth="45dp"
+    android:gravity="center"
+    android:textColor="@drawable/selector_tag_tv_rbbg"
+    android:text="56"
+    android:textSize="16sp">
+</RadioButton><!-- From: file:/Users/fyales/Project/Github/tagcloud/library/src/main/res/layout/tagview.xml -->

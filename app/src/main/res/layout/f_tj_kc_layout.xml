@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="#ededed"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/actionbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ico_ht"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarTheme">
+
+
+        <TextView
+            android:id="@+id/toolbarTitleTV"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="库存"/>
+
+        <LinearLayout
+            android:id="@+id/menuView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            >
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <cn.com.bigknow.trade.pos.Immediate.base.widget.SimpleSwipeRefreshLayout
+        android:id="@+id/f_tj_kc_SRC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/common_list_bg"/>
+    <LinearLayout
+        android:id="@+id/f_tj_kc_layout_SRC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_bg_message"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:text="当前还没有记录哦"
+            android:textSize="16sp"
+            android:textColor="#FF8A00"/>
+        <Button
+            android:id="@+id/btnRe"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+           android:gravity="center"
+            android:background="@drawable/shape_tv_clean"
+            android:text="点击刷新"
+            android:textColor="@color/c_333333"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

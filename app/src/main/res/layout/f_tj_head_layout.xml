@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#36a673"
+              android:orientation="vertical"
+            android:paddingTop="13dp"
+            android:paddingBottom="25dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/f_tj_head_radipgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rg_tjmc_"
+            android:padding="1dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/f_tj_head_t"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="今天"
+                android:background="@drawable/selector_tj_head_rbbg"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/f_tj_head_z"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="本周"
+                android:background="@drawable/selector_tj_head_rbbg"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="#ffffff"/>
+            <RadioButton
+                android:id="@+id/f_tj_head_by"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:text="半月"
+                android:background="@drawable/selector_tj_head_rbbg"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"/>
+            <RadioButton
+                android:id="@+id/f_tj_head_y"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="本月"
+                android:background="@drawable/selector_tj_head_rbbg"
+                android:textColor="@color/white"/>
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/f_tj_head_chooseMonth"
+            android:layout_width="88dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="14dp"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="选月份"
+            android:background="@drawable/selector_tj_head_rbbg_m"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="2">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_tj_cup01"/>
+            <TextView
+                android:id="@+id/f_tj_head_tvRank"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffe869"
+                android:lineSpacingExtra = "8dp"
+                android:text="您目前得成绩\n\t排名第一！\n大神签个名呗"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="22dp"
+            android:layout_marginTop="42dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="销售金额："
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/f_tj_head_tvXsje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="36000元"
+                    android:textColor="#ffffff"/>
+
+
+            </LinearLayout>
+            <!--总重量-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="总重量："
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/f_tj_head_tvZzl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="100.0斤"
+                    android:textColor="#ffffff"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="笔数："
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/f_tj_head_tvBs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="20笔"
+                    android:textColor="#ffffff"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

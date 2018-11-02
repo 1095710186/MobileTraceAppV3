@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/foodsLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moreFoodView"
+        android:layout_width="@dimen/mc_right_witdh"
+        android:layout_height="60dp"
+        android:background="#55ab3c"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textSize="@dimen/bottom_text_size"
+            android:text="更多"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/ico_more"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/leftContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <include
+                android:id="@+id/leftInputPartView"
+                layout="@layout/mc_left_input_part"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/leftUnPayPartView"
+                layout="@layout/mc_left_unpay_part"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/leftPayListPartView"
+                layout="@layout/mc_left_paylist_part"
+                android:visibility="gone"/>
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/bottomContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0">
+
+
+            <include
+                android:id="@+id/bottomPayListPartView"
+                layout="@layout/mc_bottom_paylist_part"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/bottomUnPayPartView"
+                layout="@layout/mc_bottom_unpay_part"
+                android:visibility="gone"
+                />
+
+            <include
+                android:id="@+id/bottomInputPartView"
+                layout="@layout/mc_bottom_input_part"
+                android:visibility="gone"
+                />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="@dimen/mc_right_witdh"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="#a5a5a5"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/rightContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <include
+                android:id="@+id/rightMenuPartView"
+                layout="@layout/mc_right_menu_part"
+                android:visibility="gone"
+                />
+
+            <include
+                android:id="@+id/rightFoodPartView"
+                layout="@layout/mc_right_food_part"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/exchangeView"
+            android:layout_width="@dimen/mc_right_witdh"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:background="#5eab1f"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:background="@drawable/ico_shift01"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

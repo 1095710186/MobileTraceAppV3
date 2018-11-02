@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#008e61"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:id="@+id/headIV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_img"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/gysTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:background="#ffffff"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/cdTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_mc_zb"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#0d764e"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/showTV"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="right|center"
+                android:maxLines="2"
+                android:paddingRight="10dp"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/showJ"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="斤"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:id="@+id/showT"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="吨"
+                    android:visibility="gone"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <cn.com.bigknow.trade.pos.Immediate.app.widget.NumKeyboardView
+            android:id="@+id/numkeyboardView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#cdcdcd"
+            android:padding="10dp">
+        </cn.com.bigknow.trade.pos.Immediate.app.widget.NumKeyboardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/cancleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#e57216"
+                android:text="取消"
+                android:textColor="#ffffff"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:id="@+id/sureBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#16a61e"
+                android:gravity="center">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成"
+
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"/>
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_mc_lrjg_qd"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

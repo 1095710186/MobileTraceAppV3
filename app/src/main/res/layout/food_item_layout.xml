@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:id="@+id/layout"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/pLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/foodinfo_item_imvhead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/shape_bg_jh"
+            android:src="@drawable/default_img"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="#000000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/foodinfo_item_bottomLayout"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_small_sj"/>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.8"
+                    android:background="#0cc35e"
+                    />
+
+                <ImageView
+                    android:id="@+id/foodinfo_item_imvArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="9dp"
+                    android:src="@drawable/ico_kc_small"/>
+
+
+                <TextView
+                    android:id="@+id/zlTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25dp"
+                    android:singleLine="true"
+                    android:text="eff"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"/>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/foodinfo_item_tvNmwe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/foodinfo_item_imvChed"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_jh_zx"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="48dp"
+            android:background="@drawable/shape_bg_jh"
+            android:src="@drawable/icon_xz03"
+            android:visibility="gone"
+            android:id="@+id/imgAdd" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

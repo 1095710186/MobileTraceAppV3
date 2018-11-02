@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/llView"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:background="@color/c_white"
+              android:orientation="vertical"
+    >
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#a5a5a5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/customer_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="李曹镇(123123123123123)"
+
+            android:textColor="@color/c_333333"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/customer_item_name_item_adr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_item_name"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="重庆富通餐饮集团"
+            android:textColor="@color/c_888888"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#a5a5a5"/>
+
+</LinearLayout>

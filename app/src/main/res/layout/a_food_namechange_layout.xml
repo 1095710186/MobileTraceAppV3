@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    
+    >
+    <android.support.v7.widget.Toolbar android:id="@+id/actionbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ico_ht"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarTheme">
+
+
+        <TextView
+            android:id="@+id/toolbarTitleTV"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="修改菜名"/>
+
+        <LinearLayout
+            android:id="@+id/menuView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            >
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_below="@+id/actionbar"
+        android:layout_above="@+id/a_foof_namechange_submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#c1c1c1"
+                android:layout_height="166dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <ImageView
+                    android:id="@+id/a_food_namechange_imvHead"
+                    android:layout_centerInParent="true"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_my_zwt01"
+                    />
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ababab"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="26dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标准名称"
+                    android:textColor="@color/c_999999"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/a_food_namechange_tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/c_333333"
+                    android:textSize="22sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:background="@color/c_d7d7d7"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自选俗名"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/c_999999"
+                android:textSize="22sp"/>
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexbox"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:layout_marginTop="10dp"
+                app:alignContent="stretch"
+                app:alignItems="stretch"
+                app:flexWrap="wrap"/>
+            <com.fyales.tagcloud.library.TagCloudLayout
+                android:id="@+id/container"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tagSpacing="15dp"
+                android:visibility="gone"
+                app:lineSpacing="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <!--
+     自定义属性解释:
+         tagSpacing:各个标签之间的距离
+         lineSpacing:行间距
+     -->
+
+
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/a_foof_namechange_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:text="确认"
+        android:textColor="#ffffff"
+        android:textSize="22sp"/>
+
+
+
+</RelativeLayout>

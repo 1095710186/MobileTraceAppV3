@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@null"
+    android:id="@+id/aaaaaaaaaa"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:paddingTop="8dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="@drawable/img_tckbg"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/menu_message"
+            android:gravity="center_vertical"
+            android:layout_width="180dp"
+            android:paddingLeft="15dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingRight="15dp"
+            android:layout_height="60dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_xx"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:text="消息"/>
+
+
+            <ImageView
+                android:id="@+id/imvMessage"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_tx"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#cecece"/>
+
+        <LinearLayout
+            android:id="@+id/menu_food"
+            android:layout_width="180dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:layout_height="60dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_cycp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="18sp"
+
+                android:layout_marginLeft="20dp"
+                android:text="常用菜品"/>
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#cecece"/>
+
+        <LinearLayout
+            android:id="@+id/menu_kcgl"
+            android:layout_width="180dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:layout_height="60dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_kcgl"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:text="库存管理"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

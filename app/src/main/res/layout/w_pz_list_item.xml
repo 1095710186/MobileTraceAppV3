@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ededed"
+              android:orientation="vertical"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#cccccc"/>
+
+    <LinearLayout
+
+        android:paddingLeft="8dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_white"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/pLayout"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/w_pz_item_imvHead"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_my_zwt194x"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="#000000"/>
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/w_pz_item_tvNmwe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp"/>
+
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            >
+
+
+            <!--进货数量-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="进货数量："
+                    android:textColor="#999999"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/w_pz_item_tvJhsl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="6000斤，10车"
+                    android:textColor="#333333"/>
+
+
+            </LinearLayout>
+            <!--已售数量-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="已售数量："
+                    android:textColor="#999999"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/w_pz_item_tvYssl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2800.0斤"
+                    android:textColor="#333333"/>
+
+
+            </LinearLayout>
+            <!--清库存-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="清库存："
+                    android:textColor="#999999"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/w_pz_item_tvQkc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="100斤"
+                    android:textColor="#333333"/>
+
+
+            </LinearLayout>
+            <!--平均售价-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="平均售价："
+                    android:textColor="#999999"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/w_pz_item_tvPjsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2.36元/斤"
+                    android:textColor="#333333"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"/>
+
+
+</LinearLayout>

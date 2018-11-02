@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:background="#cdcdcd"
+              android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <FrameLayout
+                android:id="@+id/t1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_index_tab_height"
+                android:background="@drawable/t1_selector">
+
+
+                <cn.com.bigknow.trade.pos.Immediate.app.widget.PoliticaTextView
+                    android:id="@+id/t1TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:text="1"
+                    android:textColor="@color/t1_c_selector"
+                    android:textSize="40sp"/>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/t2Layout"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/dimen_index_tab_height"
+                android:background="@drawable/t2_selector">
+
+                <cn.com.bigknow.trade.pos.Immediate.app.widget.PoliticaTextView
+                    android:id="@+id/t2TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="2"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/t2_c_selector"
+                    android:textSize="40sp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/t3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_index_tab_height"
+                android:background="@drawable/t3_selector">
+
+                <cn.com.bigknow.trade.pos.Immediate.app.widget.PoliticaTextView
+                    android:id="@+id/t3TV"
+                    android:layout_marginRight="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3"
+                    android:textColor="@color/t3_c_selector"
+                    android:textSize="40sp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+
+                android:id="@+id/t4Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_index_tab_height"
+                android:background="@drawable/t4_selector">
+
+                <cn.com.bigknow.trade.pos.Immediate.app.widget.PoliticaTextView
+                    android:id="@+id/t4TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="4"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/t4_c_selector"
+                    android:textSize="40sp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/t5Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_index_tab_height"
+                android:background="@drawable/t5_selector">
+
+                <cn.com.bigknow.trade.pos.Immediate.app.widget.PoliticaTextView
+                    android:id="@+id/t5TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="5"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/t5_c_selector"
+                    android:textSize="40sp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadrow">
+
+    </LinearLayout>
+
+
+</LinearLayout>

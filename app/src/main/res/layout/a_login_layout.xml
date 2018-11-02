@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activityLayoutBg"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="-30dp"
+       >
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/j_pos_img_bg"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_marginTop="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pos_img_login_logo"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/j_pos_icon_dl_phone"/>
+
+            <cn.com.bigknow.trade.pos.Immediate.base.widget.ClearEditText
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="手机号码"
+                android:text=""
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/input_bottom_bg"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/j_pos_icon_dl_lock"/>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/passET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="登录密码"
+                    android:text=""
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="#333333"
+                    android:textSize="16sp"/>
+
+
+                <FrameLayout
+                    android:id="@+id/eyeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center|right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp">
+
+                    <ImageView
+                        android:id="@+id/eyeIV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+
+                        android:src="@drawable/j_pos_icon_dl_eye2"/>
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/forgetPassTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="忘记密码?"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="即刻追溯（北京）数据科技有限公司"
+                android:textColor="#787878"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="服务电话:400-890-8818"
+                android:visibility="gone"
+                android:textColor="#787878"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

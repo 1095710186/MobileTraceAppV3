@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/pLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/foodinfo_item_imvhead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/default_img"
+            android:scaleType="centerCrop"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="#000000"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/foodinfo_item_tvNmwe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="花菜"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/foodinNmwe"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_dele02"
+        />
+
+</RelativeLayout>
+
+</LinearLayout>

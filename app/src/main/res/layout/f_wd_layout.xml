@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#dddddd"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivAvator"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/w_pos_icon_tx"
+            app:riv_border_color="@color/c_cfd5e1"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="30dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/btnGotoMyInfo"
+            android:onClick="gotoMyInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvShopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/c_666666"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/shape_tv_orgtype"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvUserType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingRight="10dp"
+                android:text=""
+
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_tv_cpgl"
+            >
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15dp"
+                android:layout_marginLeft="90dp"
+                android:drawableLeft="@drawable/icon_my_cpgg"
+                android:textColor="@color/white"
+                android:text="菜品管理"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/f_wd_tv_cpgl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_l_bg"
+                />
+
+        </RelativeLayout>
+        <!--我的消息-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_tv_wdxx"
+            >
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15dp"
+                android:layout_marginLeft="90dp"
+                android:drawableLeft="@drawable/icon_my_wdxx"
+                android:textColor="@color/white"
+                android:text="我的消息"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/f_wd_tv_wdxx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_l_bg"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_tv_xgmm"
+            >
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15dp"
+                android:layout_marginLeft="90dp"
+                android:drawableLeft="@drawable/icon_my_xgmm"
+                android:textColor="@color/white"
+                android:text="修改密码"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/f_wd_tv_xgmm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_l_bg"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_tv_gy"
+            >
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15dp"
+                android:layout_marginLeft="90dp"
+                android:drawableLeft="@drawable/icon_my_gy"
+                android:textColor="@color/white"
+                android:text="关于"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/f_wd_tv_gy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_l_bg"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="语音识别"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/iat_fangyann_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="设置识别语言"
+        android:textSize="20sp" />
+
+
+
+    <EditText
+        android:id="@+id/iat_text_test"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="top|left"
+        android:paddingBottom="20dp"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/iat_recognize_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="开始语音识别"
+        android:textSize="20sp" />
+
+</LinearLayout>

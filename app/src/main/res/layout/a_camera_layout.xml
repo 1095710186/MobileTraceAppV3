@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svCamera"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ivCapturePhoto"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/capture_photo"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivPlateRect"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/plate_rect"
+            android:contentDescription="车牌识别区" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍照识别车牌"
+
+            android:id="@+id/tvPlateResult"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

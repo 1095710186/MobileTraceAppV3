@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/p_livesell_checkbos_ck" android:state_selected="true"/>
+    <item android:drawable="@drawable/p_livesell_checkbos_uck" />
+</selector>

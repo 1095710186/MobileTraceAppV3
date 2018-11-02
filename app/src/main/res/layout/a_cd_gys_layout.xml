@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+
+              android:layout_height="match_parent">
+
+
+    <cn.com.bigknow.trade.pos.Immediate.base.widget.SimpleSwipeRefreshLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@color/activityLayoutBg"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshLayout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_tv_cpgl_"
+        >
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_xz"/>
+        <TextView
+            android:id="@+id/a_foodentry_tv_xz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_l_bg"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

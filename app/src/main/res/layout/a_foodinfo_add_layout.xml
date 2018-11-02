@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/c_ececec"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/a_foodinfo_editor_actionbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ico_ht"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarTheme">
+
+
+        <TextView
+            android:id="@+id/toolbarTitleTV"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="新增菜品"/>
+
+        <LinearLayout
+            android:id="@+id/menuView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            >
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/a_foodinfo_editor_imvhead"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/img_mc_cp92x"/>
+        <TextView
+            android:id="@+id/a_foodinfo_editor_tvname"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="花菜"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/c_666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_tv_cpedt_"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="改菜名"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/a_foodinfo_editor_tvChangename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_l_bg"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/a_foodinfo_editor_recyclerView"
+            android:layout_above="@+id/a_foodinfo_editor_relayout"
+            android:layout_width="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="10dp"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+        <RelativeLayout
+            android:id="@+id/a_foodinfo_editor_relayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_tv_cpgl_"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/a_foodinfo_editor_tv_wc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_l_bg"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+   <!-- </ScrollView>-->
+</LinearLayout>

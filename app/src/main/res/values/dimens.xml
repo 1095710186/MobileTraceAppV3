@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_44">44dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="dimen_17sp">17sp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_12sp">12sp</dimen>
+    <dimen name="dimen_11sp">11sp</dimen>
+    <dimen name="dimen_14sp">14sp</dimen>
+    <dimen name="dimen_index_tab_height">85dp</dimen>
+    <dimen name="dimen_num_keyboard_space">10dp</dimen>
+    <dimen name="dimen_num_keyboard_height">80dp</dimen>
+    <dimen name="dimen_num_keyboard_text_size">25sp</dimen>
+    <dimen name="dimen_num_keyboard_text_size_">21sp</dimen>
+    <dimen name="tele_play_img_width">360dp</dimen>
+    <dimen name="tele_play_img_height">200dp</dimen>
+
+    <!--圆角-->
+    <dimen name="shape_radius_my">6dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="bottom_text_size">21sp</dimen>
+    <dimen name="mc_right_witdh">80dp</dimen>
+
+    <dimen name="mc_keyboard_menu_width">58dp</dimen>
+    <dimen name="mc_keyboard_menu_height">56dp</dimen>
+
+</resources>

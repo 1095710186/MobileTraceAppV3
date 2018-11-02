@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#36a673"
+              android:orientation="vertical"
+              android:paddingTop="13dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/f_tj_head_radipgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_rg_tjmc_"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <RadioButton
+                android:id="@+id/f_tj_head_t"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_tj_head_rbbg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="今天"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/f_tj_head_z"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_tj_head_rbbg"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="本周"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/f_tj_head_y"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_tj_head_rbbg"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="本月"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/f_tj_head_chooseMonth"
+            android:layout_width="88dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/selector_tj_head_rbbg_m"
+            android:button="@null"
+            android:gravity="center"
+            android:text="选月份"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_tj_carbg"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+            <!--近货车数-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="进货车数："
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/f_tj_head_tvJhcs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="15车"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+
+            </LinearLayout>
+            <!--总重量-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总重量："
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/f_tj_head_tvZzl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="100.0斤"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日均进货量："
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/f_tj_head_tvRjjhl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="400斤"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

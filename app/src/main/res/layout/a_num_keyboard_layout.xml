@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      app:columnCount="4"
+
+                                      app:orientation="horizontal"
+                                      app:rowCount="4">
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="1"
+        android:text="1"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="2"
+        android:text="2"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="3"
+        android:text="3"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_del_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:tag="del">
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="#d9d9d9"
+
+            android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+            />
+
+       <!-- <ImageView
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backspace_inner"
+            android:clickable="false"
+            />-->
+    </LinearLayout>
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:tag="4"
+        android:text="4"
+        android:textColor="#333333"
+
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="5"
+        android:text="5"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="6"
+
+        android:text="6"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:tag="."
+        app:layout_gravity="fill_vertical"
+        app:layout_rowSpan="2">
+
+        <ImageView
+            android:id="@+id/btn_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dot"
+            android:clickable="false"
+
+            />
+    </LinearLayout>
+
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="7"
+        android:text="7"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="8"
+        android:text="8"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+        app:layout_column="1"
+
+
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="9"
+        android:text="9"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_clear_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="C"
+        android:text="清零"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+        />
+
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="0"
+        android:text="0"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+        app:layout_columnSpan="2"
+        app:layout_gravity="fill_horizontal"
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/btn00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_num_keyboard_space"
+        android:layout_marginTop="@dimen/dimen_num_keyboard_space"
+        android:background="@drawable/num_keyboard_selector"
+        android:gravity="center"
+        android:maxLines="1"
+        android:tag="00"
+        android:text="00"
+        android:textColor="#333333"
+        android:textSize="@dimen/dimen_num_keyboard_text_size"
+
+        />
+
+
+</android.support.v7.widget.GridLayout>

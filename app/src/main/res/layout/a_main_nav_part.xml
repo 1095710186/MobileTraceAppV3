@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/leftMenuView"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="280dp"
+
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/headIV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:background="@drawable/w_pos_icon_tx"
+            app:riv_border_color="#2eabdb"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="80dp"/>
+
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textColor="#BFE7FA"
+            android:textSize="17sp"/>
+
+
+        <TextView
+            android:id="@+id/shopTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/icon_mc_zb"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#87dbff"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.3"
+        android:background="#ffffff"/>
+
+
+    <FrameLayout
+        android:id="@+id/tab1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/s1IV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_mc_zcd_dh"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/icon_mc_mc"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="110dp"
+            android:text="卖菜"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/icon_mc_xyb"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:alpha="0.3"
+        android:background="#ffffff"/>
+
+    <FrameLayout
+        android:id="@+id/tab2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <ImageView
+            android:id="@+id/s2IV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_mc_zcd_dh"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/icon_mc_tj"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="110dp"
+            android:text="统计分析"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/icon_mc_xyb"/>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:alpha="0.3"
+        android:background="#ffffff"/>
+
+    <FrameLayout
+        android:id="@+id/tab3Layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/s3IV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_mc_zcd_dh"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/icon_mc_jh"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="110dp"
+            android:text="进货管理"
+            android:textColor="#ffffff"
+
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/icon_mc_xyb"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:alpha="0.3"
+        android:background="#ffffff"/>
+
+    <FrameLayout
+        android:id="@+id/tab4Layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/s4IV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_mc_zcd_dh"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/icon_mc_wd"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="110dp"
+            android:text="我的"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/icon_mc_xyb"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:alpha="0.3"
+        android:background="#ffffff"/>
+</LinearLayout>

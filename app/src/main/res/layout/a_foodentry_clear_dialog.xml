@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/layout_chechu_zhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="21sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="删除常用菜品"
+
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#666666"
+                android:textSize="20sp"
+                android:text="该菜品的库存将全部"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#666666"
+                android:textSize="20sp"
+                android:text="被清空，你是否确定"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#666666"
+                android:textSize="20sp"
+                android:text="删除？"
+
+                />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginTop="17dp"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/foodshanchu_layout_quxiao"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:background="#E6E6E6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#333333"
+            android:textSize="18dp"
+            android:text="取消"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/foodshanchu_layout_chechu"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="#FC4F08"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:text="确定"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#008e61"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:id="@+id/headIV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_img"
+                />
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/zlTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#0d764e"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="单价"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元/斤"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/showTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:maxLines="2"
+                    android:paddingRight="10dp"
+                    android:textColor="#333333"
+                    android:textSize="28sp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总价(元)"
+                    android:textColor="#666666"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/zjTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#16A61E"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <cn.com.bigknow.trade.pos.Immediate.app.widget.NumKeyboardView
+            android:id="@+id/numkeyboardView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#cdcdcd"
+            android:padding="10dp">
+        </cn.com.bigknow.trade.pos.Immediate.app.widget.NumKeyboardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/cancleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#e57216"
+                android:text="取消"
+                android:textColor="#ffffff"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:id="@+id/sureBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#16a61e"
+                android:gravity="center">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确定"
+
+
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"/>
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_mc_lrjg_qd"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ededed"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="#0a7939"/>
+
+    <cn.com.bigknow.trade.pos.Immediate.base.widget.SimpleSwipeRefreshLayout
+        android:id="@+id/f_tj_jh_SRC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_list_bg"/>
+
+    <LinearLayout
+        android:id="@+id/f_tj_jh_layout_SRC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_bg_message"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="当前还没有记录哦"
+            android:textColor="#FF8A00"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnRe"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:background="@drawable/shape_tv_clean"
+            android:gravity="center"
+            android:text="点击刷新"
+            android:textColor="@color/c_333333"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

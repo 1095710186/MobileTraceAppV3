@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tag_item_name"
+    android:textSize="22sp"
+    android:textColor="@drawable/selector_tag_tv_rbbg"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:button="@null"
+    android:background="@drawable/selector_tag_rbbg"
+    android:layout_width="wrap_content"
+    android:text="sdgsv"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+   >
+</RadioButton>

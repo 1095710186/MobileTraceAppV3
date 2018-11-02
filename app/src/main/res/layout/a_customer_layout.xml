@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_list_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activity_customer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/activity_customer_chose_phone_ET"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/car_pay_edittext_unenable_bg"
+            android:hint="请输入进行查询"
+            android:paddingLeft="5dp"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp"/>
+
+
+        <Button
+            android:id="@+id/activity_customer_chose_phonesearch"
+            android:layout_width="77dp"
+            android:layout_height="35dp"
+            android:background="@color/common_green"
+            android:text="搜索"
+            android:textColor="@color/c_white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <cn.com.bigknow.trade.pos.Immediate.base.widget.SimpleSwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
